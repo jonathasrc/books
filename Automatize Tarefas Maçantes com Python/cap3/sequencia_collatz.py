@@ -7,10 +7,12 @@ def collatz(number):
 
 try:
 
-number = int(input('Enter number'))
-while number != 1:
-    number = collatz(number)
-    print(number)
+    number = int(input('Enter number: '))
+    while number != 1:
+        number = collatz(number)
+        print(number)
+except ValueError:
+    print('Por favor informe um numero inteiro!')
 
 
 
